@@ -1,0 +1,82 @@
+header {
+    display: flex;
+    width: 100vw;
+    height: 48px;
+    top: 0;
+    position: fixed;
+    z-index: 5;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: var(--header-color);
+    padding: 0 12vw;
+    backdrop-filter: saturate(180%) blur(20px);
+    font-weight: 400;
+}
+
+.header-logo {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+.header-logo:hover {
+    transform: scale(1.01);
+    transition: all 100ms linear;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+header ul li:hover {
+    opacity: 0.6;
+    transition: all 100ms linear;
+}
+
+/* Выпадающее меню */
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.dropdown-line {
+    color: var(--font-color);
+    opacity: 0.4;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.nav-grid-wrap {
+    display: none;
+}
+
+
+.menu-item-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.menu-icon-title {
+    font-size: 0.5em;
+    text-align: center;
+}
+
